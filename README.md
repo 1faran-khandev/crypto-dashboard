@@ -1,25 +1,27 @@
 # Crypto Dashboard
-An interactive cryptocurrency dashboard built with React, Tailwind CSS, and Recharts. This project fetches live crypto prices from the CoinGecko API and displays them in dynamic, interactive charts.
+An interactive cryptocurrency dashboard built with React, Tailwind CSS, and Recharts.
+It fetches live cryptocurrency prices from the CoinGecko API and displays them in dynamic, interactive charts with real-time updates.
 
 # ✨ Features
-Real-time crypto prices for popular cryptocurrencies (e.g., Bitcoin, Ethereum, Dogecoin).
+Real-time crypto prices for popular cryptocurrencies (Bitcoin, Ethereum, Dogecoin, etc.)
 
-Interactive line charts showing the last 7 price updates for each coin.
+Interactive line charts showing the last 7 price updates per coin
 
-Dark/Light mode toggle for a comfortable viewing experience.
+Dark/Light mode toggle for comfortable viewing
 
-Dynamic coin management: Add or remove coins from your dashboard.
+Dynamic coin management: Add or remove coins from your dashboard
 
-Responsive design that works seamlessly on both desktop and mobile devices.
+Responsive design for desktop and mobile devices
 
+Clean dashboard layout with navbar, sidebar, and chart widgets
 # 🛠 Technologies Used
-React: The core frontend framework.
+React : Frontend library for building UI components
 
-Tailwind CSS: A modern, utility-first CSS framework for rapid styling.
+Tailwind CSS : Utility-first CSS framework for fast styling
 
-Recharts: A charting library for building interactive data visualizations.
+Recharts : Charting library for interactive data visualizations
 
-Axios: A promise-based HTTP client for fetching data from the API.
+Axios : Promise-based HTTP client for fetching API data
 
 # ⚡ Installation
 To get a local copy up and running, follow these simple steps.
@@ -39,15 +41,19 @@ Run the development server:
 npm run dev
 The application will be available in your browser at http://localhost:5173.
 
-# 📈 Planned Features
-This project is currently a work in progress. Future enhancements include:
+# Planned Features
 
-Drag-and-drop functionality for rearranging widgets.
+This project is actively being improved. Future enhancements include:
 
-More detailed charts with historical data (1-day, 1-week, 1-month).
+Drag-and-drop widgets to rearrange the dashboard
 
-Improved error handling and user notifications.
+More detailed historical charts (1-day, 1-week, 1-month)
 
+Coin search autocomplete and filtering
+
+Improved error handling and user notifications
+
+Coin icons next to chart headers for a polished look
 
 # 🌐 Live Demo
 This project is deployed and a live demo is available to view here:
