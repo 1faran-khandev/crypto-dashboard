@@ -1,27 +1,28 @@
 # Crypto Dashboard
 An interactive cryptocurrency dashboard built with React, Tailwind CSS, and Recharts.
-It fetches live cryptocurrency prices from the CoinGecko API and displays them in dynamic, interactive charts with real-time updates.
+It fetches live cryptocurrency prices from the CoinGecko API and displays them in dynamic, real-time charts with a clean, responsive UI.
 
 # ✨ Features
-Real-time crypto prices for popular cryptocurrencies (Bitcoin, Ethereum, Dogecoin, etc.)
+🔄 Live Crypto Prices – Real-time updates for popular cryptocurrencies (Bitcoin, Ethereum, Dogecoin, etc.)
 
-Interactive line charts showing the last 7 price updates per coin
+📈 Interactive Charts – Line charts showing the last 7 price updates per coin
 
-Dark/Light mode toggle for comfortable viewing
+🌙 Dark/Light Mode – Toggle for comfortable viewing on any device
 
-Dynamic coin management: Add or remove coins from your dashboard
+➕ Dynamic Coin Management – Add or remove coins from your dashboard
 
-Responsive design for desktop and mobile devices
+📱 Responsive Design – Optimized for desktop and mobile
 
-Clean dashboard layout with navbar, sidebar, and chart widgets
+🖥 Clean Layout – Includes a polished navbar, sidebar, and modular chart widgets
+
 # 🛠 Technologies Used
-React : Frontend library for building UI components
+⚛ React – Frontend library for building UI components
 
-Tailwind CSS : Utility-first CSS framework for fast styling
+🎨 Tailwind CSS – Utility-first CSS framework for styling
 
-Recharts : Charting library for interactive data visualizations
+📊 Recharts – Interactive data visualizations
 
-Axios : Promise-based HTTP client for fetching API data
+🌐 Axios – Promise-based HTTP client for fetching API data
 
 # ⚡ Installation
 To get a local copy up and running, follow these simple steps.
@@ -46,17 +47,18 @@ The application will be available in your browser at http://localhost:5173.
 
 This project is actively being improved. Future enhancements include:
 
-Drag-and-drop widgets to rearrange the dashboard
+🧩 Drag-and-Drop Widgets – Rearrange your dashboard layout
 
-More detailed historical charts (1-day, 1-week, 1-month)
+📊 Historical Charts – 1-day, 1-week, 1-month data views
 
-Coin search autocomplete and filtering
+🔍 Coin Search & Autocomplete – Faster, smarter coin filtering
 
-Improved error handling and user notifications
+⚠️ Improved Error Handling – Clearer messages and user notifications
 
-Coin icons next to chart headers for a polished look
+🪙 Coin Icons – Polished look with icons next to chart headers
 
 # 🌐 Live Demo
+
 This project is deployed and a live demo is available to view here:
 
 
