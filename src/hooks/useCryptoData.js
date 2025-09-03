@@ -1,52 +1,56 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 
-export default function useCryptoData(coins = ["bitcoin", "ethereum"]) {
+export default function useCryptoData(coins = ["bitcoin", "ethereum", "dogecoin"]) {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const fetchData = async () => {
+  useEffect(() => {
     if (coins.length === 0) return;
 
+    let ws;
     setLoading(true);
     setError(null);
 
     try {
-      const coinList = coins.join(",");
-      const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coinList}&vs_currencies=usd`;
+      const assets = coins.join(",");
+      ws = new WebSocket(`wss://ws.coincap.io/prices?assets=${assets}`);
 
-      const res = await axios.get(url);
-      const now = new Date().toLocaleTimeString();
+      ws.onopen = () => {
+        console.log("WebSocket connected");
+        setLoading(false);
+      };
 
-      setData((prevData) => {
-        const newData = { ...prevData };
+      ws.onmessage = (msg) => {
+        const prices = JSON.parse(msg.data);
+        const now = new Date().toLocaleTimeString();
 
-        coins.forEach((coin) => {
-          const price = res.data[coin]?.usd ?? null;
+        setData((prevData) => {
+          const newData = { ...prevData };
 
-          if (!newData[coin]) newData[coin] = [];
-          if (price !== null) {
+          Object.keys(prices).forEach((coin) => {
+            const price = parseFloat(prices[coin]);
+            if (!newData[coin]) newData[coin] = [];
             newData[coin] = [...newData[coin], { date: now, price }];
             if (newData[coin].length > 7) newData[coin].shift(); // keep last 7 points
-          }
+          });
+
+          return newData;
         });
+      };
 
-        return newData;
-      });
-
-      setLoading(false);
+      ws.onerror = (err) => {
+        console.error("WebSocket error:", err);
+        setError("Failed to connect to live prices");
+        setLoading(false);
+      };
     } catch (err) {
-      console.error("Error fetching crypto data:", err);
-      setError("Failed to fetch crypto data.");
+      console.error("Error setting up WebSocket:", err);
+      setError("Failed to fetch real-time data");
       setLoading(false);
     }
-  };
 
-  useEffect(() => {
-    fetchData();
-    const interval = setInterval(fetchData, 60000); // update every 60s
-    return () => clearInterval(interval);
+    return () => ws?.close();
   }, [coins]);
 
   return { data, loading, error };
