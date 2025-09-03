@@ -22,7 +22,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
       animate={{ x: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
     >
-      {/* Collapse Button */}
+      {/* Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="mb-6 p-2 rounded bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors text-sm"

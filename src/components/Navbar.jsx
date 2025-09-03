@@ -49,8 +49,6 @@ export default function Navbar({ searchTerm, setSearchTerm }) {
           className="bg-transparent outline-none text-sm text-gray-700 dark:text-gray-200 placeholder-gray-500 w-40"
         />
       </div>
-
-      {/* Right: Price + Dark Mode */}
       <div className="flex items-center gap-4">
         {price && (
           <span className="text-sm font-semibold text-green-500">
