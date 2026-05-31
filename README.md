@@ -1,71 +1,68 @@
 # Crypto Dashboard
-An interactive cryptocurrency dashboard built with React, Tailwind CSS, and Recharts.
-It fetches live cryptocurrency prices from the CoinGecko API and displays them in dynamic, real-time charts with a clean, responsive UI.
 
-# ✨ Features
-🔄 Live Crypto Prices – Real-time updates for popular cryptocurrencies (Bitcoin, Ethereum, Dogecoin, etc.)
+A real-time cryptocurrency dashboard built with React, Tailwind CSS, and Recharts. Fetches live price data from the CoinGecko API and displays it through interactive charts in a clean, responsive interface.
 
-📈 Interactive Charts – Line charts showing the last 7 price updates per coin
+---
 
-🌙 Dark/Light Mode – Toggle for comfortable viewing on any device
+## Features
 
-➕ Dynamic Coin Management – Add or remove coins from your dashboard
+- **Live prices** — Real-time updates for Bitcoin, Ethereum, Dogecoin, and more
+- **Interactive charts** — Line charts showing the last 7 price updates per coin
+- **Dark / Light mode** — Toggle for comfortable viewing on any device
+- **Dynamic coin management** — Add or remove coins from your dashboard
+- **Responsive design** — Optimized for desktop and mobile
+- **Clean layout** — Modular navbar, sidebar, and chart widget components
 
-📱 Responsive Design – Optimized for desktop and mobile
+---
 
-🖥 Clean Layout – Includes a polished navbar, sidebar, and modular chart widgets
+## Tech Stack
 
-# 🛠 Technologies Used
-⚛ React – Frontend library for building UI components
+| Technology | Purpose |
+|---|---|
+| React | UI component library |
+| Tailwind CSS | Utility-first styling |
+| Recharts | Data visualization |
+| Axios | API requests |
+| CoinGecko API | Live cryptocurrency data |
 
-🎨 Tailwind CSS – Utility-first CSS framework for styling
+---
 
-📊 Recharts – Interactive data visualizations
+## Getting Started
 
-🌐 Axios – Promise-based HTTP client for fetching API data
-
-# ⚡ Installation
-To get a local copy up and running, follow these simple steps.
-
-Clone the repository:
-
+```bash
+# Clone the repository
 git clone https://github.com/1faran-khandev/crypto-dashboard.git
 
-Navigate to the project directory:
-
+# Navigate into the project
 cd crypto-dashboard
-Install the dependencies:
 
+# Install dependencies
 npm install
-Run the development server:
 
-
+# Start the development server
 npm run dev
-The application will be available in your browser at http://localhost:5173.
+```
 
-# Planned Features
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-This project is actively being improved. Future enhancements include:
+---
 
-🧩 Drag-and-Drop Widgets – Rearrange your dashboard layout
+## Live Demo
 
-📊 Historical Charts – 1-day, 1-week, 1-month data views
+[View Live Demo](https://your-deploy-link.com)
 
-🔍 Coin Search & Autocomplete – Faster, smarter coin filtering
+---
 
-⚠️ Improved Error Handling – Clearer messages and user notifications
+## Planned Improvements
 
-🪙 Coin Icons – Polished look with icons next to chart headers
+- [ ] Drag-and-drop widget layout
+- [ ] Historical data views (1D / 1W / 1M)
+- [ ] Coin search with autocomplete
+- [ ] Coin icons next to chart headers
+- [ ] Improved error handling and user notifications
 
-# 🌐 Live Demo
+---
 
-This project is deployed and a live demo is available to view here:
+## Author
 
-
-
-Deploy site.
-
-# 🔗 GitHub Repository
-https://github.com/1faran-khandev/crypto-dashboard
-
-Made with ❤️ by Faran
+Built by [Faran Khan](https://github.com/1faran-khandev) — [Portfolio](https://farandev-portfolio.vercel.app)
